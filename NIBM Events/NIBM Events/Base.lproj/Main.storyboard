@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NIBM_Events" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2aB-sy-CjW">
+                                <rect key="frame" x="0.0" y="66" width="414" height="767"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UvQ-M8-af1">
+                                    <size key="itemSize" width="380" height="320"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="L8V-Nh-xiD" customClass="CollectionViewCell" customModule="NIBM_Events" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="10" width="380" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="320"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XhV-AS-aFn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="380" height="203"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJY-wg-TkD">
+                                                    <rect key="frame" x="13" y="216" width="347" height="29"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="IOT Hackathon 2020">
+                                                            <attributes>
+                                                                <font key="NSFont" size="20" name="ChalkboardSE-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlp-B5-CSv">
+                                                    <rect key="frame" x="11" y="248" width="349" height="24.5"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Venue: At University of Colombo">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name="ChalkboardSE-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trF-20-AWt">
+                                                    <rect key="frame" x="13" y="275" width="269" height="20"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="AUG 04 @9.30 AM - AUG 06 @4.30 PM">
+                                                            <attributes>
+                                                                <font key="NSFont" size="14" name="ChalkboardSE-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="XhV-AS-aFn" secondAttribute="bottom" constant="117" id="12l-1F-Li5"/>
+                                            <constraint firstItem="Zlp-B5-CSv" firstAttribute="leading" secondItem="L8V-Nh-xiD" secondAttribute="leading" constant="11" id="Aqe-4c-RrZ"/>
+                                            <constraint firstItem="XhV-AS-aFn" firstAttribute="leading" secondItem="L8V-Nh-xiD" secondAttribute="leading" id="FmN-5G-wFv"/>
+                                            <constraint firstAttribute="trailing" secondItem="XhV-AS-aFn" secondAttribute="trailing" id="J3g-AU-2AM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zlp-B5-CSv" secondAttribute="trailing" constant="20" id="NIQ-eS-KRS"/>
+                                            <constraint firstItem="MJY-wg-TkD" firstAttribute="leading" secondItem="L8V-Nh-xiD" secondAttribute="leading" constant="13" id="NjS-kg-ZOi"/>
+                                            <constraint firstItem="trF-20-AWt" firstAttribute="firstBaseline" secondItem="Zlp-B5-CSv" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="Qwt-cH-pqw"/>
+                                            <constraint firstItem="XhV-AS-aFn" firstAttribute="top" secondItem="L8V-Nh-xiD" secondAttribute="top" id="VHD-9y-pNN"/>
+                                            <constraint firstAttribute="trailing" secondItem="MJY-wg-TkD" secondAttribute="trailing" constant="20" id="VJY-Do-Lbe"/>
+                                            <constraint firstItem="trF-20-AWt" firstAttribute="leading" secondItem="L8V-Nh-xiD" secondAttribute="leading" constant="13" id="c4O-dg-9D5"/>
+                                            <constraint firstItem="MJY-wg-TkD" firstAttribute="top" secondItem="L8V-Nh-xiD" secondAttribute="top" constant="216" id="jaY-vm-njW"/>
+                                            <constraint firstAttribute="trailing" secondItem="trF-20-AWt" secondAttribute="trailing" constant="98" id="pLH-P6-U1y"/>
+                                            <constraint firstAttribute="bottom" secondItem="trF-20-AWt" secondAttribute="bottom" constant="25" id="qiq-X7-N4S"/>
+                                            <constraint firstItem="Zlp-B5-CSv" firstAttribute="top" secondItem="L8V-Nh-xiD" secondAttribute="top" constant="248" id="wKy-f9-xSD"/>
+                                        </constraints>
+                                        <size key="customSize" width="380" height="320"/>
+                                        <connections>
+                                            <outlet property="eventDateTime" destination="trF-20-AWt" id="NVO-UI-qxj"/>
+                                            <outlet property="eventImage" destination="XhV-AS-aFn" id="Y7Q-tM-wSh"/>
+                                            <outlet property="eventName" destination="MJY-wg-TkD" id="kQ7-NL-qM9"/>
+                                            <outlet property="eventVenue" destination="Zlp-B5-CSv" id="NaC-in-2MC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sp8-bY-h0S"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Eb5-8t-XgW"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="115"/>
+        </scene>
+    </scenes>
+</document>
